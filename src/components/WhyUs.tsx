@@ -31,7 +31,7 @@ const reasons = [
 
 const WhyUs = () => {
   return (
-    <section id="nosotros" className="py-24 bg-gray-900 text-white relative overflow-hidden">
+    <section id="nosotros" className="py-16 sm:py-20 lg:py-24 bg-gray-900 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -39,8 +39,8 @@ const WhyUs = () => {
         }} />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -51,28 +51,28 @@ const WhyUs = () => {
             <span className="text-[#d4af37] font-medium text-sm tracking-wider uppercase">
               ¿Por qué elegirnos?
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold font-[Playfair_Display] mt-3 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-[Playfair_Display] mt-3 mb-4 sm:mb-6">
               La Excelencia en{' '}
               <span className="text-[#d4af37]">Cuidado Capilar</span>
             </h2>
-            <p className="text-gray-400 text-lg mb-8">
+            <p className="text-gray-400 text-base sm:text-lg mb-6 sm:mb-8">
               En Alisado Permanente Premium nos dedicamos a transformar tu cabello
               con los tratamientos más avanzados y seguros del mercado. Tu belleza
               y salud capilar son nuestra pasión.
             </p>
             
-            <div className="grid grid-cols-3 gap-8 py-8 border-t border-b border-gray-700">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 py-6 sm:py-8 border-t border-b border-gray-700">
               <div className="text-center">
-                <div className="text-4xl font-bold text-[#d4af37]">5+</div>
-                <div className="text-gray-400 text-sm mt-1">Años de experiencia</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#d4af37]">5+</div>
+                <div className="text-gray-400 text-xs sm:text-sm mt-1">Años de experiencia</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-[#d4af37]">1000+</div>
-                <div className="text-gray-400 text-sm mt-1">Clientas felices</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#d4af37]">1000+</div>
+                <div className="text-gray-400 text-xs sm:text-sm mt-1">Clientas felices</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-[#d4af37]">98%</div>
-                <div className="text-gray-400 text-sm mt-1">Satisfacción</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#d4af37]">98%</div>
+                <div className="text-gray-400 text-xs sm:text-sm mt-1">Satisfacción</div>
               </div>
             </div>
           </motion.div>

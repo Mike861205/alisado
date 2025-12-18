@@ -42,20 +42,20 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonios" className="py-24 bg-[#f5f0e8]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="testimonios" className="py-16 sm:py-20 lg:py-24 bg-[#f5f0e8]">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-12 lg:mb-16"
         >
           <span className="text-[#d4af37] font-medium text-sm tracking-wider uppercase">
             Testimonios
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 font-[Playfair_Display] mt-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 font-[Playfair_Display] mt-3">
             Lo que dicen nuestras clientas
           </h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -64,7 +64,7 @@ const Testimonials = () => {
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -72,7 +72,7 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow relative"
+              className="bg-white rounded-2xl p-5 sm:p-6 lg:p-8 shadow-sm hover:shadow-lg transition-shadow relative"
             >
               {/* Quote Icon */}
               <div className="absolute top-6 right-6 text-[#d4af37]/20">
